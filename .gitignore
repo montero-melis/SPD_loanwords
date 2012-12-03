@@ -1,6 +1,7 @@
 # LaTeX output files you want to ignore
 
 *.aux
+*.bcf
 *.glo
 *.idx
 *.log
@@ -23,3 +24,5 @@
 *.mtc1
 *.out
 *.synctex.gz
+*.run.xml
+*.tex.bak
