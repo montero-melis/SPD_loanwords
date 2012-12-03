@@ -8,7 +8,7 @@ To translate a data set into tabular data for LaTeX we can use R, which contains
 # LaTeX matters
 
 - Quotation marks in LaTex: 
-	- double quot marks = ```bla''`
-	- single quot marks = ``bla'`
+	- double quot marks = \`\`bla'' 
+	- single quot marks =  \`bla'
 	- see *quote marks* in `http://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Quote-marks`
 - To reference a section, figure, or even an item in a list, use the `\label{}` command, then reference it with the `\ref{}` command
