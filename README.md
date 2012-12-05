@@ -27,5 +27,5 @@ There might be some problem with the character encoding when you export Zotero e
 What seems to solve this is the following:
 
 1. Go to Zotero > Preferences > Export 
-1. Under `character encoding` check the option "Display character encoding option on export"
+1. Under "character encoding" check the option "Display character encoding option on export"
 1. Now when you export into BibTex format select the character encoding "English (US-ASCII)"
