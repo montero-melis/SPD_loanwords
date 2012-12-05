@@ -15,6 +15,14 @@ To translate a data set into tabular data for LaTeX we can use R, which contains
 
 # Export references from Zotero to BibTeX
 
+Let's use the shared Zotero library "SPD project" to export our references.
+This will avoid having twice the same reference with slightly different formatting.
+Everytime we want to export we do that directly from this shared library:
+
+1. Select all items
+1. Right click on them
+1. Choose "Export selected items"
+
 There might be some problem with the character encoding when you export Zotero entries to BibTex format.
 What seems to solve this is the following:
 
