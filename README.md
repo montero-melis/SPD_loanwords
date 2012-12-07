@@ -7,13 +7,38 @@ To translate a data set into tabular data for LaTeX we can use R, which contains
 
 Blooh blaaah blèèèh blublublublubluh
 
-# LaTeX matters
+
+
+LaTeX matters
+=============
+
+
+Things to avoid
+---------------
+
+Here's some stuff which caused problems when trying to compile the document
+
+- You have to escape special characters like
+	- ampersands (with a backslash like this `\%`)
+	- TeX doesn't like underscores `\_`. If you wanted to use italics then use the `\emph{}` command
+- Commands are case-sensitive so `\section{}` is fine but `\Section{}` isn't.
+
+
+
+Useful stuff
+------------
 
 - Quotation marks in LaTex: 
 	- double quot marks = \`\`bla'' 
 	- single quot marks =  \`bla'
 	- see *quote marks* in `http://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Quote-marks`
 - To reference a section, figure, or even an item in a list, use the `\label{}` command, then reference it with the `\ref{}` command
+
+
+
+
+
+
 
 # Export references from Zotero to BibTeX
 
