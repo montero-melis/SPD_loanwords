@@ -16,11 +16,11 @@ LaTeX matters
 Things to avoid
 ---------------
 
-Here's some stuff which caused problems when trying to compile the document
+Here's some stuff which caused problems when trying to compile the document. Avoid it!
 
 - You have to escape special characters like
-	- ampersands (with a backslash like this `\%`)
-	- TeX doesn't like underscores `\_`. If you wanted to use italics then use the `\emph{}` command
+	- ampersands (write this: `\&`)
+	- underscores `_`. If you wanted to use italics then use the `\emph{}` command
 - Commands are case-sensitive so `\section{}` is fine but `\Section{}` isn't.
 
 
@@ -31,8 +31,8 @@ Useful stuff
 - Quotation marks in LaTex: 
 	- double quot marks = \`\`bla'' 
 	- single quot marks =  \`bla'
-	- see *quote marks* in `http://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Quote-marks`
-- To reference a section, figure, or even an item in a list, use the `\label{}` command, then reference it with the `\ref{}` command
+	- see *quote marks* in http://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Quote-marks
+- To reference a section, figure, or even an item in a list, use the `\label{}` command, then reference it with the `\ref{}` command in the text. See *Labels and Cross-referencing* at http://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
 
 
 
@@ -80,7 +80,7 @@ We’ll be all working on the same branch (master), so we will NOT use forking (NB
 The `git clone` command makes sure that your local repository syncs with the master branch at GitHub, so in practice you only need to do two things.
 
 1. Commit changes with `git commit` (after adding them with `git add .` or `git add -A`)
-1. If you're using the Git Bash and you end up in the unfriendly Vi editor, then: write your commit message on the first line. Then click `Esc`, then type `:wq!`. Ok, the commit is done!
+1. If you're using the Git Bash and you end up in the unfriendly Vi editor, then: write your commit message on the first line. Then click `Esc`, then type `:wq!`. Ok, the commit is done! (Ignore this point if you're using the GUI)
 1. Make sure you have the last changes made to master. You do this by pulling from master (`git pull`)
 1. Now you can push your last changes to the master branch at GitHub with `git push`.
 
