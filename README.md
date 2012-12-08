@@ -40,7 +40,8 @@ Useful stuff
 
 
 
-# Export references from Zotero to BibTeX
+Export references from Zotero to BibTeX
+=========================
 
 Let's use the shared Zotero library "SPD project" to export our references.
 This will avoid having twice the same reference with slightly different formatting.
@@ -49,6 +50,9 @@ Everytime we want to export we do that directly from this shared library:
 1. Select all items
 1. Right click on them
 1. Choose "Export selected items"
+1. Export in BibTeX format without notes or any other crap; choose "English (US-ASCII)" encdoding
+1. Save the file with the name `spdbib.bib` (well, you probably don't need to add `.bib` since it will be there by default). That means you'll overwrite the old file.
+1. Now open that file with JabRef and autogenerate the keys: select all the entries and click `Ctrl+G`
 
 There might be some problem with the character encoding when you export Zotero entries to BibTex format.
 What seems to solve this is the following:

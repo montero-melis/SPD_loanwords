@@ -1,0 +1,96 @@
+%This document has only the bare bone structure.
+%Let's keep it for parts that are already in a good enough shape to be part of the final document.
+%The work in progress will be done in 'ProjectProposal'
+
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc} %words with accents but also other quite basic stuff, so it's good to have that!
+
+\usepackage{fancyhdr} %Creates a fancy header to include course name, term etc. See "fancyhdr..." doc in LaTex documentation folder.
+
+\usepackage{graphicx} %That's needed to insert external image files, e.g. JPEG. (I think...)
+%\usepackage{ccaption} %Allows you to include legends in the figure environment with \legend{} command
+%\usepackage{caption}  %Not sure what this does
+%\usepackage{subcaption} %Possibly to have subheaders if you have two images under the same picture environment 
+
+\usepackage{enumerate} % For instance lists where each item appears as a, b, c, etc.
+
+%\usepackage{expex} %Numbered examples as often used by linguists. See "Bruno_introtex" in my LaTeX documentation folder for specific commands
+
+\usepackage{multirow} %The easiest way to do multirow and multicolumn spanning in tables; more info found at:
+% http://andrewjpage.com/index.php?/archives/43-Multirow-and-multicolumn-spanning-with-latex-tables.html
+
+\usepackage{amsmath} %I think that's needed even for some quite basic mathematical type-setting
+
+%% Bibliography:
+
+%This bibliography style does not fit to any particular one (e.g. Harvard, APA), but is still quite good-looking:
+\usepackage[style=authoryear-comp,maxnames=2,isbn=false,doi=false,firstinits=true, url=false]{biblatex}
+%A slight variation with the options explained in the pdf file for biblatex package; yhe main difference is that 3 authors will be shown instead of directly "et al." if >3:
+%\usepackage[style=authoryear-icomp, bibstyle=authoryear, minnames=3, isbn=false, url=false, doi=false]{biblatex}
+\bibliography{bib} %Specify whatever the name of your bibliography here!
+%Exported entries from Zotero have too many unwanted fields. This is the way to ged rid of them in the bibliography:
+\AtEveryBibitem{% Clean up the bibtex rather than editing it
+ \clearfield{date}
+ \clearfield{eprint}
+ \clearfield{isbn}
+ \clearfield{issn}
+ \clearfield{month}
+ \clearfield{series}
+ \clearfield{number}
+ \clearfield{note}
+ \ifentrytype{book}{}{% Remove publisher and editor except for books
+ \clearlist{publisher}
+ \clearname{editor}
+ }
+}
+
+\title{The crosslinguistic intertextuality of loanwords}
+\author{Vejdemo, Susanne \and Vandewinkel, Sigi \and Montero-Melis, Guillermo}
+
+%Some handy shorthands for citing:
+\newcommand{\pc}{\parencite}
+\newcommand{\tc}{\textcite}
+
+
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+\section{Purpose and aims}
+
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+\section{Survey of the field}
+
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+
+\section{Project description}
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+
+\section{Significance}
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+
+\section{Ethical considerations}
+
+
+
+\end{document}
