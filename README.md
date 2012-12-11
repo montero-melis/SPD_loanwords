@@ -1,4 +1,5 @@
-# General
+General
+=========
 
 This is a repository for Susanne V, Sigi V, and Guillermo MM's final project for the course in Semantics, Pragmatics and discourse.
 The main file is `ProjectProposal.tex` which contains the actual proposal.
@@ -6,6 +7,17 @@ Other files containing data in text/csv format, or figures, might be included as
 To translate a data set into tabular data for LaTeX we can use R, which contains some useful wrappers (checkout `xtable` package).
 
 Blooh blaaah blèèèh blublublublubluh
+
+
+
+Files
+=====
+
+- `main.tex` includes more or less achieved sections and will turn into our finished product.
+- `prestamosEnSp`: a rather poor list of English borrowings into Spanish (but not easy to find better ones).
+- `ProjectProposal`: our working document containing all the drafts.
+- `README.md` (this file) includes practical information which is useful for all the collaborators.
+- `spdbib.bib`: our bibliography, directly exported from our shared Zoter folder (See *Export references* below).
 
 
 
