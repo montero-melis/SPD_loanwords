@@ -38,8 +38,6 @@ Useful stuff
 
 
 
-
-
 # Export references from Zotero to BibTeX
 
 Let's use the shared Zotero library "SPD project" to export our references.
