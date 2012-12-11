@@ -26,4 +26,8 @@
 *.synctex.gz
 *.run.xml
 *.tex.bak
+
+*.bib.bak
+
 *.pdf
+

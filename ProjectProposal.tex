@@ -10,33 +10,38 @@
 %\usepackage{caption}  %Not sure what this does
 %\usepackage{subcaption} %Possibly to have subheaders if you have two images under the same picture environment 
 \usepackage{enumerate} % For instance lists where each item appears as a, b, c, etc.
-\usepackage{expex} %Numbered examples as often used by linguists. See "Bruno_introtex" in my LaTeX documentation folder for specific commands
+%\usepackage{expex} %Numbered examples as often used by linguists. See "Bruno_introtex" in my LaTeX documentation folder for specific commands
 \usepackage{multirow} %The easiest way to do multirow and multicolumn spanning in tables; more info found at:
 % http://andrewjpage.com/index.php?/archives/43-Multirow-and-multicolumn-spanning-with-latex-tables.html
 \usepackage{amsmath} %I think that's needed even for some quite basic mathematical type-setting
 
 %% Bibliography:
-%This bibliography style does not fit to any particular one (e.g. Harvard, APA), but is still quite good-looking:
-\usepackage[style=authoryear-comp,maxnames=2,isbn=false,doi=false,firstinits=true, url=false]{biblatex}
-%A slight variation with the options explained in the pdf file for biblatex package; yhe main difference is that 3 authors will be shown instead of directly "et al." if >3:
-%\usepackage[style=authoryear-icomp, bibstyle=authoryear, minnames=3, isbn=false, url=false, doi=false]{biblatex}
-\bibliography{bib} %Specify whatever the name of your bibliography here!
-%Exported entries from Zotero have too many unwanted fields. This is the way to ged rid of them in the bibliography:
-\AtEveryBibitem{% Clean up the bibtex rather than editing it
- \clearfield{date}
- \clearfield{eprint}
- \clearfield{isbn}
- \clearfield{issn}
- \clearfield{month}
- \clearfield{series}
- \clearfield{number}
-  \clearfield{note}
- 
- \ifentrytype{book}{}{% Remove publisher and editor except for books
-  \clearlist{publisher}
-  \clearname{editor}
- }
-}
+
+\usepackage[round]{natbib}
+
+%\usepackage{cite}
+
+%%This bibliography style does not fit to any particular one (e.g. Harvard, APA), but is still quite good-looking:
+%\usepackage[style=authoryear-comp,maxnames=2,isbn=false,doi=false,firstinits=true, url=false]{biblatex}
+%%A slight variation with the options explained in the pdf file for biblatex package; yhe main difference is that 3 authors will be shown instead of directly "et al." if >3:
+%%\usepackage[style=authoryear-icomp, bibstyle=authoryear, minnames=3, isbn=false, url=false, doi=false]{biblatex}
+%\bibliography{bib} %Specify whatever the name of your bibliography here!
+%%Exported entries from Zotero have too many unwanted fields. This is the way to ged rid of them in the bibliography:
+%\AtEveryBibitem{% Clean up the bibtex rather than editing it
+% \clearfield{date}
+% \clearfield{eprint}
+% \clearfield{isbn}
+% \clearfield{issn}
+% \clearfield{month}
+% \clearfield{series}
+% \clearfield{number}
+%  \clearfield{note}
+% 
+% \ifentrytype{book}{}{% Remove publisher and editor except for books
+%  \clearlist{publisher}
+%  \clearname{editor}
+% }
+%}
 
 \usepackage[nodayofweek]{datetime} %A nice style for date, cf. document "datetime-formats" in LaTeX documentation folder; here I use \longdate, see below
 
@@ -47,8 +52,8 @@
 %The problem I've had is that I don't know how to set one specific date and have it written in the \longdate format...
 
 %Some handy shorthands for citing:
-\newcommand{\pc}{\parencite}
-\newcommand{\tc}{\textcite}
+%\newcommand{\pc}{\parencite}
+%\newcommand{\tc}{\textcite}
 
 
 \begin{document}
@@ -85,12 +90,12 @@ By using both quantitative experimental and corpus methods, as well as qualitati
 
 \subsection{What is meaning?}
 
-Meaning can be approached in a variety of ways \cite{Koptjevskaja-Tamm2008}
+Meaning can be approached in a variety of ways \citep{Koptjevskaja-Tamm2008}
 
 
 \section{Susanne's draft}
 HOW TO MEASURE MEANING CHANGE
-As a word is borrowed fro one language to another, its meaning changes - the number and kind of referents it represents can grow or shrink, and its register (in which social setting it is appropriate to use) can also vary. This projects seeks to investigate this change - how large is it, and are there recurrent patterns in the kinds of changes that occur to loan words? 
+As a word is borrowed from one language to another, its meaning changes - the number and kind of referents it represents can grow or shrink, and its register (in which social setting it is appropriate to use) can also vary. This projects seeks to investigate this change - how large is it, and are there recurrent patterns in the kinds of changes that occur to loan words?
 This project aims to create both etic and emic definitions of the meaning, and meaning changes, of the loanwords. In an etic definition, the meaning of a word as defined as the set of its uses (Koptjevskaja-Tamm 2008), or the set of its situated instances (Evans 2009). In this, we follow the exemplar semantics research done by Wälchli \& Cysouw (2012), and will take a denotational approach to meaning where similarity in form will be assumed to represent similarity in meaning. In an emic definition, the commonalities behind the different uses are sought (Koptjevskaja-Tamm 2008), what Traugott \& Dasher 2002 call a "stabilized, institutionalized, and prototypical “magnetic center” that can be contextually interpreted in constrained ways" and which Linell (REF) refers to as the meaning potentials of a word.
 The etic definitions will be investigated through the uses of the words in corpora (see section CL) and by acceptability judgments in the psycholinguistic research tradition (see section AJ). The emic definitions can aprtly be arrived of by a careful analysis of the commonalities in these two experiments, but the subconscious evaluations of the words by speakers will also be measured through psychological Semantic Differential experiments (see section SD).
 
@@ -98,6 +103,17 @@ The etic definitions will be investigated through the uses of the words in corpo
 %%%%%%%%%%%
 
 \subsection{Lexcial Borrowings}
+
+Loanwords are the most straightforward way of studying languages in contact. They're highly visible, easily borrowable, and are subject to a measure of control by the speaker community. One main reason for borrowings being referential gaps -- this is also the reason that the most common borrowings are nouns (cf. Matras 2009:168).
+
+Besides filling in referential gaps in the host language, the main reason speakers borrow lexical items into their language have to do with various special effects: euphemisms, a need for trendiness and creativity (cf. Rebuck 2002); or for humorous effects, expressiveness or group identity (cf. Gottlieb 2006; Wennberg 2010). This entails that borrowings are usually not quite synonymous with the native alternative(s) available in the host language: it seems that connotational distinctions suffice to warrant the incorporation of borrowed vocabulary alongside denotationally-synonymous native items. We expect this to show up clearly in the results of our LSA research: after all, it is commonly accepted that (near-) synonyms need not share the same antonyms (cf. Miller et al 1990). 
+
+It is common for loan words to become structurally integrated in the host language, phonetically as well as grammatically, with native phonemes and e.g. plurality markers substituting for the donor language's. The degree of structural integration into the host language is often a correlate of the level of bilingualism prevalent in the speaker community. Given that speakers of Swedish, Dutch and Spanish may show significant difference in their familiarity with or fluency in English (FOR REFERENCE SEE EMAIL), we expect to see differences here (FLESH OUT). 
+
+We will not be dealing with true barbarisms or solecisms; but only those words that are in general usage, yet still engender prescriptivist pushback. None of the words on the list are part of what has been argued to be the core vocabulary of a language (see Swadesh 1952): many are centred in the areas of technology, marketing and international relationships. Since the explicitly prescriptivist word lists include many single-morpheme native alternatives, the ``gap'' hypothesis of borrowing is clearly insufficient to explain them all. Furthermore, the typological and structural commonalities between our three languages should ensure a low threshold for borrowability and make incorporation feasible, minimizing interference stemming from typological incompatibility.
+
+
+
 
 \cite{Matras2009}
 
@@ -127,9 +143,9 @@ The etic definitions will be investigated through the uses of the words in corpo
 %Some questions regarding lexical borrowings & hypotheses. These will prolly be too straightforward / fine-grained / detailed to be of any use as hypotheses.
 
 \begin{enumerate}[a.]
-	\item \cite{Matras2009} writes on pp 172-173 when discussing integration of loans into the host language: ``We saw in Chapter 5 that bilinguals may choose to integrate some insertions but not to integrate others. This flexibility is largely limited, however, to active bilinguals; once a word has spread into the repertoire of monolinguals, it will tend to follow a fixed morpho-syntactic integration pattern.'' Does this entail hypotheses about the type of loans we expect in the three languages? The degree of incorporation? About differential incorporation (Swedes having the highest degree of bilingualism; Spaniards the least; Dutch intermediate)?
-	\item  Any hypotheses about the borrowing of cognates? Borrowing of compounds whose components have already been borrowed or are otherwise familiar (bodyguard is perhaps easier to borrow if you have borrowed _body_). 
-%	\item  Any hypotheses about the borrowing of English grammatical markers? Like plural markings? Dutch has a native -s plural; perhaps Spanish -os and -as can be counted as such too. Does this entail differences in the ease of incorporation of English flection? (e.g. Swedish _drinks_ vs Dutch _kids_ -- which feels less strange because of the native plural).
+	\item \citet{Matras2009} writes on pp 172-173 when discussing integration of loans into the host language: ``We saw in Chapter 5 that bilinguals may choose to integrate some insertions but not to integrate others. This flexibility is largely limited, however, to active bilinguals; once a word has spread into the repertoire of monolinguals, it will tend to follow a fixed morpho-syntactic integration pattern.'' Does this entail hypotheses about the type of loans we expect in the three languages? The degree of incorporation? About differential incorporation (Swedes having the highest degree of bilingualism; Spaniards the least; Dutch intermediate)?
+	\item  Any hypotheses about the borrowing of cognates? Borrowing of compounds whose components have already been borrowed or are otherwise familiar (bodyguard is perhaps easier to borrow if you have borrowed \emph{body}). 
+%	\item  Any hypotheses about the borrowing of English grammatical markers? Like plural markings? Dutch has a native -s plural; perhaps Spanish -os and -as can be counted as such too. Does this entail differences in the ease of incorporation of English flection? (e.g. Swedish \emph{drinks} vs Dutch \emph{kids} -- the latter of which feels less strange because of the native plural).
 	\item  Item the fourth
 \end{enumerate}
 
@@ -139,6 +155,9 @@ The etic definitions will be investigated through the uses of the words in corpo
 \subsection{Swedish loanwords}
 
 
-%\printbibliography
+\bibliography{spdbib}{}
+\bibliographystyle{plainnat}
+
+
 
 \end{document}
