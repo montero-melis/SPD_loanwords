@@ -93,6 +93,30 @@ By using both quantitative experimental and corpus methods, as well as qualitati
 Meaning can be approached in a variety of ways \citep{Koptjevskaja-Tamm2008}
 
 
+
+%%%%%%%%%%%%%%%%%%
+
+\subsection{Latent Semantic Analysis}
+
+In order to get at the meaning of loanwords and their nearest synonyms in each language, we will use the theory and method of Latent Semantic Analysis, henceforth LSA \citep{Deerwester1990, Landauer1999, Dumais2004}.
+LSA applies statistical computations to large corpora in order to build a semantic space.
+The semantic space is derived by applying Singular Value Decomposition to a large $ terms \times documents$ matrix, where the rows contain all the unique words that occur in the corpus, and the columns the documents (i.e. contexts or texts) which form the database.
+In this semantic space word meanings are represented as vectors in a high-dimensional space%
+\footnote{The choice of the dimension of the space is determined by the researcher, but typically it involves the 100 first dimensions or so extracted from a singular value decomposition. For the mathematical details see \citet{Deerwester1990}.}.
+Words with similar meaning are close to each other in this semantic space, while unrelated words are far apart.
+Thus LSA offers a quantitative measure of \emph{how similar} two words actually are, which is exactly what we wish to determine for each language.
+
+Beyond between-word similarity, LSA also allows  to test whether two words are used in similar types of texts across languages.
+Thus, if we have external information about the texts of our database, so that we know for instance that certain texts are, say, computer technology written by experts, we may see if a certain loanword is more often used in this type of texts than elsewhere.
+Subsequently we can test if the same pattern applies in the other languages, as well as in the donor language.
+The underlying idea is that
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+
+
 \section{Susanne's draft}
 HOW TO MEASURE MEANING CHANGE
 As a word is borrowed from one language to another, its meaning changes - the number and kind of referents it represents can grow or shrink, and its register (in which social setting it is appropriate to use) can also vary. This projects seeks to investigate this change - how large is it, and are there recurrent patterns in the kinds of changes that occur to loan words?
