@@ -27,21 +27,7 @@
 %%\usepackage[style=authoryear-icomp, bibstyle=authoryear, minnames=3, isbn=false, url=false, doi=false]{biblatex}
 %\bibliography{bib} %Specify whatever the name of your bibliography here!
 %%Exported entries from Zotero have too many unwanted fields. This is the way to ged rid of them in the bibliography:
-%\AtEveryBibitem{% Clean up the bibtex rather than editing it
-% \clearfield{date}
-% \clearfield{eprint}
-% \clearfield{isbn}
-% \clearfield{issn}
-% \clearfield{month}
-% \clearfield{series}
-% \clearfield{number}
-%  \clearfield{note}
-% 
-% \ifentrytype{book}{}{% Remove publisher and editor except for books
-%  \clearlist{publisher}
-%  \clearname{editor}
-% }
-%}
+
 
 \usepackage[nodayofweek]{datetime} %A nice style for date, cf. document "datetime-formats" in LaTeX documentation folder; here I use \longdate, see below
 
@@ -180,7 +166,7 @@ We will not be dealing with true barbarisms or solecisms; but only those words t
 
 
 \bibliography{spdbib}{}
-\bibliographystyle{plainnat}
+\bibliographystyle{apalike2}
 
 
 
