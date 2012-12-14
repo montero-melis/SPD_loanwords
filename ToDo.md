@@ -8,21 +8,18 @@ Theoretical background
 =====================
 
 - Experimental method + Experimental phase --> Guillermo
-- Meaning + Corpus phase --> Sus
+- Meaning + Corpus + Corpus phase --> Sus
 
 
 Re-reading
 ==========
 
-- Guillermo: meaning (theory) + Corpus phase (Project)
+- Guillermo: meaning (theory) + corpus theory + Corpus phase (Project)
+- Sigi: meaning (theory) + corpus theory + Corpus phase (Project)
 
 
 Hypotheses and Research questions
 ==========
-
-Susanne:
-We should find something in the literature that leads to certain hypotheses (esp. in section on loanwords)
-
 
 
 
@@ -32,8 +29,22 @@ Loanwords
 
 - Online site: world loanword database `http://wold.livingsources.org/`
 - How does the meaning of a word change when it is loaned into a different languages?
-
+Guillermo: read this section
 
 
 Time table (3 years)
 ================
+Sigi writes first draft
+
+
+Significance
+============
+
+Sigi writes
+
+
+
+Compilation phase
+=================
+
+Sigi Writes
