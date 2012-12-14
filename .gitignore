@@ -26,4 +26,9 @@
 *.synctex.gz
 *.run.xml
 *.tex.bak
+
+*.bib.bak
+
 ProjectProposal.pdf
+main.pdf
+
